@@ -1,0 +1,92 @@
+/* Hoja de estilos que funciona en toda la aplicacion 
+ *(pero no dentro de los shadow-root de los WebComponets, para eso usar 'common-styles.css')
+ */
+
+.error-background {
+  color: var(--lumo-error-color);
+  background-color: var(--lumo-error-color-10pct);
+}
+.error-background-contrast {
+  color: var(--lumo-error-contrast-color);
+  background-color: var(--lumo-error-color);
+}
+
+.success-background {
+  color: var(--lumo-success-color);
+  background-color: var(--lumo-success-color-10pct);
+}
+.success-background-contrast {
+  color: var(--lumo-success-contrast-color);
+  background-color: var(--lumo-success-color);
+}
+
+.primary-background {
+  color: var(--lumo-primary-color);
+  background-color: var(--lumo-primary-color-10pct);
+}
+.primary-background-contrast {
+  color: var(--lumo-primary-contrast-color);
+  background-color: var(--lumo-primary-color);
+}
+
+.gold-background {
+  color: var(--gold-color);
+  background-color: var(--gold-color-10pct);
+}
+.gold-background-contrast {
+  color: var(--gold-contrast-color);
+  background-color: var(--gold-color);
+}
+
+.blue-background {
+  color: var(--blue-color);
+  background-color: var(--blue-color-10pct);
+}
+.blue-background-contrast {
+  color: var(--blue-contrast-color);
+  background-color: var(--blue-color);
+}
+
+.grey-background {
+  color: var(--grey-color);
+  background-color: var(--grey-color-10pct);
+}
+.grey-background-contrast {
+  color: var(--grey-contrast-color);
+  background-color: var(--grey-color);
+}
+
+.icono-redondo{
+	border-radius: 100%;
+ 	flex-shrink: 0;
+ 	height: var(--lumo-size-s);
+ 	margin-right: var(--lumo-space-m);
+    vertical-align: middle;
+ 	width: var(--lumo-size-s);
+}
+
+:root {
+/*  Para cambiar el color principal */
+/*     --lumo-primary-color: #ca4835; */
+/*  Para cambiar el color de fondo principal */
+	--lumo-base-color: rgb(240, 242, 248);
+
+	--gold-color: rgb(255, 171, 0);
+	--gold-color-50pct: rgba(255, 171, 0, 0.5);
+	--gold-color-10pct: rgba(255, 171, 0, 0.1);
+	--gold-contrast-color: #FFF;
+	
+	--blue-color: hsl(214, 90%, 52%);
+	--blue-color-50pct: hsla(214, 90%, 52%, 0.5);
+	--blue-color-10pct: hsla(214, 90%, 52%, 0.1);
+	--blue-contrast-color: #FFF;
+	
+	--grey-color: rgb(85, 85 ,85);
+	--grey-color-50pct: rgba(85, 85, 85, 0.5);
+	--grey-color-10pct: rgba(85, 85, 85, 0.1);
+	--grey-contrast-color: #FFF;
+	
+	--lumo-font-size-m: 13px;
+	
+	--lumo-clickable-cursor: pointer;
+}

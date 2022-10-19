@@ -1,0 +1,11 @@
+/* Hoja de estilos que funciona para cada componente (shadow-root de los WebComponets)
+ */
+
+/* componentes de solo lectura con fondo claro */
+:host([readOnly]) [part="input-field"] {
+	background-color: var(--lumo-contrast-5pct) !important;
+}
+
+.negrita {
+	font-weight: bold;
+}
