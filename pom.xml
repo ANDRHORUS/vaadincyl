@@ -64,7 +64,7 @@
                     	<contextPath>/vaadin</contextPath>
                         <allowDuplicateFragmentNames>true</allowDuplicateFragmentNames>
 					</webApp>
-                	<scan>10</scan>
+                	<scan>5</scan>
                 </configuration>
             </plugin>
             <!--
