@@ -9,13 +9,12 @@ import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.router.Route;
 
 import es.horus.curso.sacyl.vaadin.utils.PacienteBE;
 
-@Route(value = "/pacientes", layout = MenuView.class)
+//@Route(value = "/pacientes", layout = MenuView.class)
 @CssImport("./styles/shared-styles.css")
-@CssImport(value="./styles/common-styles.css", themeFor = "*")
+@CssImport(value="./styles/common-styles.css", themeFor = "vaadin-grid")
 public class PacientesView extends VerticalLayout {
 	
 	private Grid<PacienteBE> tabla;
@@ -24,6 +23,7 @@ public class PacientesView extends VerticalLayout {
 	public PacientesView() {
 		datos = PacienteBE.DATOS_PRUEBA;
 		tabla = new Grid<>();
+		tabla.setId("");
 		tabla.addClassName("fondo-azul");
 		tabla.addColumn(p->p.getNombre()).setHeader("Nombre").setResizable(true).setFlexGrow(2).setSortable(true);
 		tabla.addColumn(PacienteBE::getApe1).setHeader("Apellido 1").setResizable(true).setFlexGrow(1).setClassNameGenerator(p->calculaClase(p));
